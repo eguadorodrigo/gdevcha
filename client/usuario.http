@@ -1,0 +1,29 @@
+POST http://localhost:9090/usuarios HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Rodrigo v2",
+    "email": "v2@email.com",
+    "password": "v21234"
+}
+
+###
+GET http://localhost:9090/usuarios HTTP/1.1
+content-type: application/json
+
+###
+
+###
+PUT http://localhost:9090/usuarios/3 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Rodrigo v3",
+    "email": "v3@email.com",
+    "password": "v21234"
+}
+
+###
+
+DELETE  http://localhost:9090/usuarios/2 HTTP/1.1
+content-type: application/json
